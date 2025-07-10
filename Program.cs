@@ -7,8 +7,8 @@ Func<string, string> toUpper = (x) => x.ToUpper();
 Func<string, string> removeVowels = (x) => new string(x.Where(c => !"aeiouAEIOU".Contains(c)).ToArray());
 Func<int, int, int> add = (x, y) => x + y;
 Func<int, int> doubleIt = (x) => x * 2;
-Func <int, int> increment = (x) => x + 1;
-Func <int, int, int> addAndDouble = (x, y) => (x + y) * 2;
+Func<int, int> increment = (x) => x + 1;
+Func<int, int, int> addAndDouble = (x, y) => (x + y) * 2;
 
 WriteLine(
 """
@@ -20,8 +20,8 @@ Func<string, string> toUpper = (x) => x.ToUpper();
 Func<string, string> removeVowels = (x) => new string(x.Where(c => !"aeiouAEIOU".Contains(c)).ToArray());
 Func<int, int, int> add = (x, y) => x + y;
 Func<int, int> doubleIt = (x) => x * 2;
-Func <int, int> increment = (x) => x + 1;
-Func <int, int, int> addAndDouble = (x, y) => (x + y) * 2;
+Func<int, int> increment = (x) => x + 1;
+Func<int, int, int> addAndDouble = (x, y) => (x + y) * 2;
 -------
 """);
 
