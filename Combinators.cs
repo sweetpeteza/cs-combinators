@@ -29,8 +29,8 @@ public class Combinators
     // Φ1 𝜆abcde.a(bde)(cde)
     public static Func<A, B, E> Phi_1<A, B, C, D, E>(Func<C, D, E> f, Func<A, B, C> g, Func<A, B, D> h) => (x, y) => f(g(x, y), h(x, y));
     // not part of the original combinators but useful
-    public static A Left<A, B>(A x, B _y) => x;
-    public static B Right<A, B>(A _x, B y) => y;
+    public static A Left<A, B>(A x, B _y) => x;//K
+    public static B Right<A, B>(A _x, B y) => y;//CK
 
     // TODO: Implement the following combinators
     // E 𝜆abcde.ab(cde)
